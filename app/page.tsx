@@ -1,9 +1,11 @@
 import { ContactLinks } from '@/components/contact-links'
+import { WatermarkBackground } from '@/components/watermark-background'
 
 export default function Page() {
   return (
-    <main className="flex min-h-svh items-center justify-center bg-navy px-5 py-12">
-      <article className="w-full max-w-lg rounded-lg border border-gold/30 bg-navy-light/40 p-8 shadow-2xl shadow-black/30 sm:p-12">
+    <main className="relative isolate flex min-h-svh items-center justify-center overflow-hidden bg-navy px-5 py-12">
+      <WatermarkBackground />
+      <article className="relative w-full max-w-lg rounded-lg border border-gold/40 bg-navy-light p-8 shadow-2xl shadow-black/50 sm:p-12">
         <header className="flex flex-col gap-4">
           <div className="h-px w-12 bg-gold" aria-hidden="true" />
           <h1 className="font-serif text-5xl font-semibold leading-none text-white text-balance sm:text-6xl">
